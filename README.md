@@ -1,16 +1,26 @@
-# reducedfeatureset-triage-ml-model
+# Triage | Reduced Features Model
 
-Changes Made
-**Feature Set Reduction**
-The following features were removed from the training and inference pipelines:
+This project predicts Emergency Severity Index (ESI) levels using only 4 vital signs: HR, O2Sat, Temp, and Resp.
 
-SBP (Systolic Blood Pressure)
-MAP (Mean Arterial Pressure)
-DBP (Diastolic Blood Pressure)
-EtCO2 (End-tidal CO2)
-The model now relies exclusively on:
+## Features
+- ML model trained on a reduced set of 4 vital signs.
+- Flask backend for prediction.
+- Clean, futuristic Web UI.
 
-HR (Heart Rate)
-O2Sat (Oxygen Saturation)
-Temp (Temperature)
-Resp (Respiratory Rate)
+## Tech Stack
+- Python
+- FastAPI
+- CatBoost
+- Scikit-learn
+- HTML / CSS
+
+## Project Structure
+app.py – FastAPI server  
+best_esi_model.pkl – trained model  
+scaler.pkl – feature scaling  
+imputer.pkl – missing value handling  
+templates/ – HTML UI  
+static/ – CSS/JS  
+experiment/ – model training scripts
+
+## Run Locally
