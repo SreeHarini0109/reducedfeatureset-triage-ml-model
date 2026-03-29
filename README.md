@@ -19,8 +19,5 @@ app.py – FastAPI server
 best_esi_model.pkl – trained model  
 scaler.pkl – feature scaling  
 imputer.pkl – missing value handling  
-templates/ – HTML UI  
-static/ – CSS/JS  
-experiment/ – model training scripts
 
-## Run Locally
+
